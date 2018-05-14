@@ -1,10 +1,7 @@
 package com.tosektosek.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.sun.org.apache.xpath.internal.operations.Bool;
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -26,7 +23,7 @@ public class Task {
     private LocalDate dueDate;
     private Boolean complete;
 
-    public Task(Long id,String name, LocalDate dueDate, Boolean complete) {
+    public Task(Long id, String name, LocalDate dueDate, Boolean complete) {
         this.id = id;
         this.name = name;
         this.dueDate = dueDate;
